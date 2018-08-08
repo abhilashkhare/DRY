@@ -17,7 +17,7 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         user = User(id: 1, firstName: "Steve", lastName: "Jobs")
-        label.text = "\(user.firstName) \(Array(user.lastName)[0])"
+        label.text = user.displayName
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

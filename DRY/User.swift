@@ -12,4 +12,9 @@ struct User {
     let id: Int
     let firstName: String
     let lastName: String
+    
+    var displayName : String {
+        return  "\(firstName) \(Array(lastName)[0])"
+
+    }
 }
